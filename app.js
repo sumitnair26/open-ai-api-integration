@@ -10,7 +10,7 @@ const { generateMeta, generateImage } = require('./controllers/openaiController'
 
 //app setup 
 const app = express()
-app.listen(4000, () => console.log(`listeneing for requests on port 400`))
+app.listen(4001, () => console.log(`listening for requests on port 4001`))
 
 
 // middleware 

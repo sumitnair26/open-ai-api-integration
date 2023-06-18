@@ -1,9 +1,11 @@
 const openai = require('../config/openaiConfig')
-
+console.log('came under generate meta');
 /*
     Function to generate Yutube Keywords 
 */
 const generateMeta = async (req, res) => {
+
+    console.log('came under generate meta');
 
     const { title } = req.body
 
