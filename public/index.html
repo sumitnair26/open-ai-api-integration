@@ -18,7 +18,7 @@
       <h2>Generate Meta Data</h2>
       <label for="title">
         <span>Video Title:</span>
-        <input type="text" name="title">
+        <input type="text" name="title" required>
         <button>generate meta data</button>
       </label>
     </form>
@@ -34,13 +34,14 @@
       <h2>Generate Thumbnail Image</h2>
       <label for="image">
         <span>Describe the image</span>
-        <input type="text" name="prompt">
+        <input type="text" name="prompt" required>
         <button>generate thumbnail</button>
       </label>
     </form>
 
     <div class="thumbnail">
-      <img src="https://place-hold.it/512x512" alt="thumbnail">
+      <!-- <img src="https://place-hold.it/512x512" alt="thumbnail"> -->
+      <img src="https://place-hold.it/512x512&text=Please%20wait%20!!!!" alt="thumbnail">
     </div>
     
   </div><!-- end container -->

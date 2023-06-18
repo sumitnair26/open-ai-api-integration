@@ -43,7 +43,7 @@ This command will launch the Node.js server, and you should see a message indica
 
 Open your web browser and navigate to http://localhost:4001 (replace 4001 with the port number shown in the previous step).
 
-You should now see a interface to Add Title and ADD Image Tittle where you can then get YouTube Video Description and Tags, also you can get Thumbnail image for Youtube Video.
+You should now see a interface to Add Video Title & Describe the image, where you can then get YouTube Video Description and Tags, also you can get Thumbnail image for your YouTube Video.
 
 Contributing
 Contributions to this repository are welcome. If you encounter any issues or have improvements to suggest, please create a new issue or submit a pull request.

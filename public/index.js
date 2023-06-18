@@ -13,7 +13,8 @@ const thumbnail = document.querySelector('.thumbnail img');
 metaForm.addEventListener('submit', async (e) => {
 
         e.preventDefault()
-
+        description.textContent = "Working on your Request :) , Please wait !!!!"
+        tags.textContent = "Working on your Request :) Please wait !!!!"
         const res = await fetch('/openai/meta', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
@@ -32,7 +33,7 @@ metaForm.addEventListener('submit', async (e) => {
 //Function to get YouTube Thumbnail
 imageForm.addEventListener('submit', async(e) => {
     e.preventDefault()
-
+    thumbnail.setAttribute('src', 'https://place-hold.it/512x512?text=Please%20Wait!!!!&fontsize=23')
     const res = await fetch('/openai/image', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},

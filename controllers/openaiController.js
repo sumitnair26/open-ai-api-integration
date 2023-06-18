@@ -5,8 +5,6 @@ console.log('came under generate meta');
 */
 const generateMeta = async (req, res) => {
 
-    console.log('came under generate meta');
-
     const { title } = req.body
 
     const description = await openai.createChatCompletion({
