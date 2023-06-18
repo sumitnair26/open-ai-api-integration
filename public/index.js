@@ -1,4 +1,3 @@
-// const { json } = require("express");
 
 // forms
 const metaForm = document.querySelector('.meta-form');
@@ -13,15 +12,7 @@ const thumbnail = document.querySelector('.thumbnail img');
 //description and tags
 metaForm.addEventListener('submit', async (e) => {
 
-        console.log('came inside this function');
         e.preventDefault()
-
-        /*
-        const res = await fetch('/openai/meta', {
-            method: 'POST',
-            headers: {'Content-Type':'application/json'},
-            body: JSON.stringify({ title: metaForm.title.value })
-        }) */
 
         const res = await fetch('/openai/meta', {
             method: 'POST',
@@ -38,7 +29,7 @@ metaForm.addEventListener('submit', async (e) => {
 
 })
 
-//image/thumbnil
+//Function to get YouTube Thumbnail
 imageForm.addEventListener('submit', async(e) => {
     e.preventDefault()
 
@@ -53,7 +44,5 @@ imageForm.addEventListener('submit', async(e) => {
     console.log(data)
 
     thumbnail.setAttribute('src', data.url)
-
-
 
 })

@@ -1,12 +1,6 @@
 
-/*
-// move code to Express APP 
-const { title } = require('process')
-const readline = require('readline') 
-*/
 const express = require('express')
 const { generateMeta, generateImage } = require('./controllers/openaiController')
-
 
 //app setup 
 const app = express()
@@ -21,19 +15,3 @@ app.use(express.static('public'))
 app.post('/openai/meta', generateMeta)
 app.post('/openai/image', generateImage)
 
-
-
-
-
-
-/*
-Lets move this Code to Express APP
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-})
-
-rl.question('YouTube Video Title: \n', generateMeta)
-
-rl.question('Provide Youtube title to genereate Youtube thumbnail : \n', generateImage)
-*/
